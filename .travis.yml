@@ -5,4 +5,6 @@ script: "./mvnw clean install"
 before_install:
   - chmod +x mvnw
 notifications:
-  email: jmayta17@hotmail.com
+  email:
+  - jmayta17@hotmail.com
+  - jmayta@pucp.edu.pe
