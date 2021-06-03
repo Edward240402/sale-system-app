@@ -5,4 +5,4 @@ script: "./mvnw clean install"
 before_install:
   - chmod +x mvnw
 notifications:
-  email: pcsijmay@upc.edu.pe
+  email: jmayta17@hotmail.com
