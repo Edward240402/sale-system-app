@@ -1,8 +1,13 @@
 language: java
 jdk:
-  - openjdk8
+- openjdk8
 before_install:
-  - chmod +x mvnw
+- chmod +x mvnw
 script: "./mvnw clean install"
 notifications:
   email: jmayta17@hotmail.com
+deploy:
+  app: sale-system-app
+  provider: heroku
+  api_key:
+    secure: qM3rMa1JRGaxHOkKWSrxN42/FVg01bQ45YGbyLLjrP/RLcBvwopzz5AGmQDkwyBE09LN83e9aN2PrxDH8A3+hiQfNlYH4KQn5yNwyfUsi0qSd7t+FQdUVcJ7yc5fupwPxYwgAmT9fup+0D06eRP1H9ACgFBk5LDZ56wA1SanT+f/0BM51aBTAsr5WZlPggQs5Lf23h8BmMKhIyR0+6E2wzg+56WbQaVmkMMktFGNX/IAW9snWYwGYsq8cX6eZaOpWRati5wwpGlhf07wZA3QvMztB4SuttwN0FXYFeyjdZfVQHQXpMS9WNl3I4ixnvV3KThyOiLBu81gRvxy3/2LxLBNTBRcAcbGCnVujIB7kFa7qyVyv3UDzW3OiYc4mDEpkPcNjN6O80Cb2VWqlu+k2uwCBFBNSAY4n1gj+UOQV9C2gMj8mAqBcc9PtxffljluyPhk736hasJy6dJ9CBjScR6vqqBfsXGFToCR198VEUqdimRV5DYHsJH2E1LaPWlN8SXzDf7U+gaJGMuXPsGquymk9m2zDeD6VVEIBxf+xHFo5/6gVUPYG44EITM+epqvViRFPNeP/srAEQxtWVZm617d2mti8fg/6Bi5FM17kqpUIkQ0drX8/d0JeE5TOH0sjoFQ71g9yzI11b5wDOxCVkkWj72inszzN2M7Mstz/lk=
